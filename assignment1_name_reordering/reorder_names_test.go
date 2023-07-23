@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func TestValidNumberArguments(t *testing.T) {
+func Test_Valid_Number_Arguments(t *testing.T) {
 	input_args := []string{"program_name", "Ho", "Vinh", "Xuan", "VN"}
 	is_valid := verify_number_arguments(input_args)
 	if is_valid != true {
@@ -19,7 +19,7 @@ func TestValidNumberArguments(t *testing.T) {
 	}
 }
 
-func TestValidCountryCode(t *testing.T) {
+func Test_Valid_Country_Code(t *testing.T) {
 	country_code_list := []string{"VN", "US"}
 	var is_valid bool
 	for _, country_code := range country_code_list {
@@ -30,7 +30,7 @@ func TestValidCountryCode(t *testing.T) {
 	}
 }
 
-func TestUSNameWithoutMiddle(t *testing.T) {
+func Test_US_Name_Without_Middle(t *testing.T) {
 	input_args := []string{"program_name", "Vinh", "Ho", "US"}
 	expected := fmt.Sprintf("Vinh Ho")
 	output_name := process_input_args(input_args)
@@ -40,7 +40,7 @@ func TestUSNameWithoutMiddle(t *testing.T) {
 	}
 }
 
-func TestUSNameWithMiddle(t *testing.T) {
+func Test_US_Name_With_Middle(t *testing.T) {
 	input_args := []string{"program_name", "Vinh", "Ho", "Xuan", "US"}
 	expected := fmt.Sprintf("Vinh Xuan Ho")
 	output_name := process_input_args(input_args)
@@ -50,7 +50,7 @@ func TestUSNameWithMiddle(t *testing.T) {
 	}
 }
 
-func TestVNNameWithoutMiddle(t *testing.T) {
+func Test_VN_Name_Without_Middle(t *testing.T) {
 	input_args := []string{"program_name", "Vinh", "Ho", "VN"}
 	expected := fmt.Sprintf("Ho Vinh")
 	output_name := process_input_args(input_args)
@@ -60,7 +60,7 @@ func TestVNNameWithoutMiddle(t *testing.T) {
 	}
 }
 
-func TestVNNameWithMiddle(t *testing.T) {
+func Test_VN_Name_With_Middle(t *testing.T) {
 	input_args := []string{"program_name", "Vinh", "Ho", "Xuan", "VN"}
 	expected := fmt.Sprintf("Ho Xuan Vinh")
 	output_name := process_input_args(input_args)
