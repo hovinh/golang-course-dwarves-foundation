@@ -45,3 +45,10 @@ Output: apple banana orange
 $ go run sorter.go -mix 5.5 apple 2.7 orange 3 banana
 Output: 2.7 3 5.5 apple banana orange
 ```
+
+- Program:
+
+```bash
+$ cd assignment2_sorter/sortermodule
+$ go run sorter.go -int 5 2 10 1
+```
