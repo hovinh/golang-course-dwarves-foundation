@@ -52,3 +52,29 @@ Output: 2.7 3 5.5 apple banana orange
 $ cd assignment2_sorter/sortermodule
 $ go run sorter.go -int 5 2 10 1
 ```
+
+## Assignment 3
+
+- Objective: Count the number of rectangles in matrix.
+- Input: Matrix of 0 and 1.
+- Outputs: count of rectangles.
+- Examples:
+
+```bash
+$ go run count_rectangles.go
+```
+
+## Assignment 4
+
+- Objective: Count the number of different integers in a string.
+- Input: A string of digits and lowercase English letters, 2 integers are considered different if their decimal representation without any leading zeros are different.
+- Outputs: count of rectangles.
+- Examples:
+
+```bash
+$ go run count_numdiffintegers.go
+```
+
+# Solution
+
+https://github.com/hieuphq/go23-example
